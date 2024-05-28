@@ -9,7 +9,7 @@ class Singleton {
     constructor( nombre = "") {
         //comprobamos si la instancia ya existe, si no existe la creamos y devolvemos la instancia creada
         if (!!Singleton.instancia) {
-          //la doble negación transforma los valores en su equivalente booleano,
+          //la doble negación transforma los valores en su equivalente booleano
           return Singleton.instancia;
         }
 
