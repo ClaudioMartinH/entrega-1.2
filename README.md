@@ -45,7 +45,7 @@ Para entender mejor este punto podemos mirar al ejemplo que adjunto en este repo
 
 
 Fuentes:
-- Jesús Mur Fontanals: https://medium.com/@jesusmurfontanals/singleton-pattern-con-javascript-3eb1c03f184e
-- Nicolás Schürmann de HolaMundo: https://www.youtube.com/watch?v=JI_THVXPToQ
-- Martín de BettaTech: https://www.youtube.com/watch?v=GGq6s7xhHzY
-- Fernando Herrera: https://www.youtube.com/watch?v=rrWRhrdwuLg
+- Jesús Mur Fontanals: https://medium.com/@jesusmurfontanals/singleton-pattern-con-javascript-3eb1c03f184e youtube: https://www.youtube.com/watch?v=OuKl1HwD1x8
+- Nicolás Schürmann de HolaMundo en youtube: https://www.youtube.com/watch?v=JI_THVXPToQ
+- Martín de BettaTech en youtube: https://www.youtube.com/watch?v=GGq6s7xhHzY
+- Fernando Herrera en youtube: https://www.youtube.com/watch?v=rrWRhrdwuLg
