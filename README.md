@@ -39,7 +39,7 @@ La forma para instanciar esta clase concreta será la siguiente: con un método 
 Esta función, al ser parte de la clase, puede llamar al constructor sin problema y comprueba si ya existe alguna otra instancia de la misma creada con anterioridad. De ser así, la función nos la devuelve.
 De no ser así, crearía una nueva por primera vez y nos la devolvería. De esta forma conseguimos que solo exista una única instancia creada de esta clase, ya que la función lo primero que hace es buscar y devolver la primera instancia.
 Es responsabilidad de la clase guardar esta instancia, de manera que se pueda comprobar su existencia.
-Para entender mejor este punto podemos mirar al ejemplo que adjunto en este repositorio (singleton.js)
+Para entender mejor este punto podemos mirar el ejemplo que adjunto en este repositorio (singleton.js) en el cual se crea la instancia directamente con el constructor, o mirando el ejemplo (singleton2.js) en el cual utilizamos el metodo getInstance() 
 
 
 
