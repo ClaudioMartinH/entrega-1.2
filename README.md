@@ -7,9 +7,10 @@ Comenzaremos explicando brevemente que son los patrones de diseño y para que se
 
 Los patrones de diseño son la formalización de las buenas prácticas que podemos utilizar para resolver problemas o errores comunes.
 
-En la Programación Orientada a Objetos (POO o OOP) los patrones muestran relaciones e interacciones sobre los diferentes objetos y clases, y se pueden clasificar en tres categorías principales: creacionales, estructurales y de comportamiento. Cada tipo aborda diferentes aspectos del diseño de software y proporciona soluciones específicas para distintos tipos de problemas. 
+En la Programación Orientada a Objetos (POO o OOP) los patrones muestran relaciones e interacciones sobre los diferentes objetos y clases, y se pueden clasificar en tres categorías principales: creacionales, estructurales y de comportamiento. 
+Cada tipo aborda diferentes aspectos del diseño de software y proporciona soluciones específicas para distintos tipos de problemas. 
 
-Aunque los patrones que impliquen mutabilidad, que recordemos que eso se refiere a la capacidad de un objeto para cambiar su estado interno o sus atributos una vez ha sido creado, implica muchas veces que los patrones no sean utiles cuando se esta utilizando un paradigma funcional estricto. Y en ese caso utilizar un patrón puede ser una pésima idea dependiendo del contexto o el lenguaje con el que estamos desarrollando.
+Aunque los patrones que impliquen mutabilidad, que recordemos que eso se refiere a la capacidad de un objeto para cambiar su estado interno o sus atributos una vez ha sido creado, implica muchas veces que los patrones no sean útiles cuando se esta utilizando un paradigma funcional estricto. Y en ese caso utilizar un patrón puede ser una pésima idea dependiendo del contexto o el lenguaje con el que estamos desarrollando.
 
 El patrón Singleton, el cual pertenece a la categoria de los patrones creacionales, restringe la instanciación de una clase a una sola instancia y proporciona un punto global de acceso a ella. En NodeJs los módulos se cargan una sola vez y las instancias se comparten, lo que facilita la implementación del patrón Singleton.
 Es útil cuando necesitas una sola instancia de una clase para poder coordinar acciones entre diferentes sistemas. Por ejemplo:
@@ -21,7 +22,7 @@ Es útil cuando necesitas una sola instancia de una clase para poder coordinar a
 - Si el sistema se tiene que conectar con un servicio tipo AWS de una sola instancia.
 
 En estos 3 casos sería conveniente utilizar el patrón Singleton.
-Aunque en NodeJs se puede implementar un objeto literal y exportarlo, lo cual haría que se comportara exactamente igual que un Singleton, ya que el motor de NodeJS ya tiene implementado un caché con las variables exportadas..
+Aunque en NodeJs se puede implementar un objeto literal y exportarlo, lo cual haría que se comportara exactamente igual que un Singleton, ya que el motor de NodeJS ya tiene implementado un caché con las variables exportadas.
 
 Inconvenientes de este patrón:
 
@@ -31,7 +32,7 @@ Inconvenientes de este patrón:
 
 - También mantienene el estado a lo largo de toda la vida de la aplicación por lo que podría ser un recolector de basura perfecto y comerse la memoria de nuestro sistema, y esto puede aumentar el riesgo de fugas de memoria en aplicaciones grandes.
 
-- Hacer unit test con ellas puede llegar a ser un infierno porque cada test debe ser totalmente independiente al anterior y eso no se cumple, por lo que al mantener el estado la aplicación se hace difícil de testear.
+- Hacer tests unitarios con ellas puede llegar a ser un infierno porque cada test debe ser totalmente independiente al anterior y eso no se cumple, por lo que al mantener el estado la aplicación se hace difícil de testear.
 
 Implementarlo se consigue haciendo que el constructor sea privado. De esta forma hacemos que éste sea inaccesible desde fuera de la clase, con lo que ganamos el control sobre la instanciación de la misma, en otras palabras, es la clase la que gana el control de como se instancian sus propios objetos. Bloqueamos que cualquiera desde fuera de la clase pueda crear instancias de esa clase.
 Evitamos que se pueda escribir el clásico "new (nombre de la clase)".
