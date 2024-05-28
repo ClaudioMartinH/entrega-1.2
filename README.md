@@ -48,4 +48,4 @@ Fuentes:
 - Jesús Mur Fontanals: https://medium.com/@jesusmurfontanals/singleton-pattern-con-javascript-3eb1c03f184e
 - Nicolás Schürmann de HolaMundo: https://www.youtube.com/watch?v=JI_THVXPToQ
 - Martín de BettaTech: https://www.youtube.com/watch?v=GGq6s7xhHzY
-- Fernando Herrera:  https://www.youtube.com/watch?v=rrWRhrdwuLg
+- Fernando Herrera: https://www.youtube.com/watch?v=rrWRhrdwuLg
