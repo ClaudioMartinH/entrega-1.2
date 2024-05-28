@@ -29,7 +29,7 @@ Inconvenientes de este patrón:
 
 - Además generalmente se expone la instancia de nuestro objeto al contexto global de la aplicación, por lo que pudiera ser modificada en cualquier momento perdiendo el control de la misma.
 
-- También mantienene el estado a lo largo de toda la vida de la aplicación por lo que podría ser un recolector de basura perfecto y comerse la memoria de nuestro sistema.
+- También mantienene el estado a lo largo de toda la vida de la aplicación por lo que podría ser un recolector de basura perfecto y comerse la memoria de nuestro sistema, y esto puede aumentar el riesgo de fugas de memoria en aplicaciones grandes.
 
 - Hacer unit test con ellas puede llegar a ser un infierno porque cada test debe ser totalmente independiente al anterior y eso no se cumple, por lo que al mantener el estado la aplicación se hace difícil de testear.
 
